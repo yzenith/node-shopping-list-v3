@@ -73,7 +73,7 @@ app.post('/recipes', jsonParser, (req, res) => {
 });
 app.delete('/recipes/:id', (req,res) => {
   console.log(req);
-  ShoppingList.delete(req.params.id);
+  Recipes.delete(req.params.id);
   console.log(`you want to delete ${req.params.id}`);
   res.status(204).end();
 });
